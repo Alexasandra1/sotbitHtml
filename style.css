@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background: url(/image/bacground.png);
+    font-family: "Montserrat", serif;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+}
+
+button {
+    border-radius: 5px;
+    color: #ffffff;
+    height: 50px;
+    border: none;
+}
+
+h1 {
+    font-size: 64px;
+    width: 732px;
+    font-weight: 300;
+}
+
+section p{
+    max-width: 650px;
+    font-size: 16px;
+}
+
+.letter {
+    border: #ffffff 1px solid;
+    background-color: transparent;
+    width: 215px;
+    font-size: 14px;
+}
+
+.more {
+ background-color: #00AEEF;
+ width: 180px;
+
+}
+
+.phone h3, .phone p {
+    margin: 0;
+}
+
+.phone p{
+    text-decoration: underline dashed ;
+}
+
+.arrow{
+    font-size: 64px;
+}
+
+.firstHalf, .secondHalf{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3vh;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    gap: 15vh;
+    margin: 11vh 2vh;
+}
+.right { 
+    margin-left: 52vh;
+}
