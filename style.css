@@ -145,7 +145,7 @@ article ol{
 @media (max-width: 1540px) {
 /* @media (max-width: 1440px) { */
     .firstSection{
-        background: url(/image/background1440.png);
+        background: url(./image/background1440.png);
     }
 
     .firstContainer{
@@ -180,7 +180,7 @@ article ol{
  }
 @media (max-width: 1024px) {
     .firstSection{
-        background: url(/image/background1024.png);
+        background: url(./image/background1024.png);
 
     }
     .firstContainer{
@@ -213,7 +213,7 @@ article ol{
 
  @media (max-width: 768px) {
     .firstSection{
-        background: url(/image/background768.png);
+        background: url(./image/background768.png);
     }
     .firstContainer{
         height: 1024px;
@@ -274,7 +274,7 @@ article ol{
     }
 
     .firstSection{
-        background: url(/image/background320.png);
+        background: url(./image/background320.png);
     }
     
     .firstContainer{
