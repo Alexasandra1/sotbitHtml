@@ -94,7 +94,7 @@ h1 {
 }
 
 .intro {
-    background: url(/image/background1920.png);
+    background: url(./image/background1920.png);
     height: 1080px;
     display: grid;
 }
