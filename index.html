@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -9,152 +9,151 @@
 </head>
 
 <body>
-    <header>
-        <div class="firstHalf">
-            <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_0_61)">
-                    <rect x="-1.91852" y="11.8531" width="34" height="3" fill="black" />
-                    <rect x="-1.91895" y="20" width="34" height="3" fill="black" />
-                    <rect x="-2" y="4" width="23" height="3" fill="black" />
-                </g>
-            </svg>
-            <img class="logo" src="./image/logo.png" alt="logo">
-            <p class="country">Россия <img src="./image/language.png" alt="rus">ᐯ</p>
+    <header class="header">
+        <div class="header__first-half">
+            <div class="header__menu">
+                <div class="header__menu-item"></div>
+                <div class="header__menu-item"></div>
+                <div class="header__menu-item"></div>
+            </div>
+            <img class="header__logo" src="./image/logo.png" alt="logo">
+            <p class="header__country">Россия <img class="header__country-flag" src="./image/language.png" alt="rus">ᐯ
+            </p>
         </div>
 
-        <div class="secondHalf">
-            <div class="phone">
-                <h3>+7 (495) 278-08-54 V</h3>
-                <p>Заказать обратный звонок</p>
+        <div class="header__second-half">
+            <div class="header__phone">
+                <p class="header__phone-number"><strong>+7 (495) 278-08-54 V</strong></p>
+                <p class="header__callback">Заказать обратный звонок</p>
             </div>
-            <button class="butLetter"><b>Написать письмо</b></button>
-
-           <img class="search" src="./image/search.png" alt="search">
-           <img class="support" src="./image/Support.png" alt="Support">
-           <img class="basket" src="./image/basket.png" alt="basket">
-           <img class="user" src="./image/user.png" alt="user">
+            <button class="header__button header__button-letter"><b>Написать письмо</b></button>
+            <nav class="header__nav">
+                <button class="header__button header__button--search" type="button"></button>
+                <button class="header__button header__button--support" type="button"></button>
+                <button class="header__button header__button--basket" type="button"></button>
+                <button class="header__button header__button--user" type="button"></button>
+            </nav>
         </div>
     </header>
 
     <main>
-        <section class="firstSection">
-            <div class="firstContainer">
-                <div class="arrow">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_5119_13043)">
-                    <path d="M7.72352 15.1219L22.5244 0.361867C23.0094 -0.121444 23.7945 -0.120631 24.2786 0.364367C24.7624 0.849302 24.7611 1.63486 24.2761 2.11855L10.3562 16.0001L24.2766 29.8815C24.7616 30.3652 24.7628 31.1503 24.2791 31.6353C24.0364 31.8784 23.7185 32 23.4006 32C23.0834 32 22.7668 31.8792 22.5245 31.6378L7.72352 16.8782C7.48996 16.6458 7.35889 16.3296 7.35889 16.0001C7.35889 15.6706 7.49033 15.3547 7.72352 15.1219Z" fill="#C4C4C4"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_5119_13043">
-                    <rect width="32" height="32" fill="white"/>
-                    </clipPath>
-                    </defs>
-                    </svg>
-                </div>
-                <article>
-                    <h1 class="hideText1920"><strong>Разработка и внедрение</strong></h1>
-                    <h2 class="hideText1920">B2B платформы на Битрикс</h2>
-                    <h2 class="hide">Внедрение</h2>
-                    <h1 class="hide">B2B платформы</h1>
-                    <ol class="hideText1920">
+        <section class="intro">
+            <div class="intro__container">
+                <button class="intro__arrow intro__arrow--left"></button>
+                <div class="intro__content">
+                    <h1 class="intro__title intro__title--large"><strong>Разработка и внедрение</strong></h1>
+                    <h2 class="intro__subtitle intro__subtitle--large">B2B платформы на Битрикс</h2>
+                    <h2 class="intro__subtitle intro__subtitle--small">Внедрение</h2>
+                    <h1 class="intro__title intro__title--small">B2B платформы</h1>
+                    <ol class="intro__list intro__list--large">
                         <li>Быстрый запуск B2B платформы за одну неделю;</li>
                         <li>Гарантия качественного выполнения работ точно в срок;</li>
                         <li>Возможность доработки под задачи Вашего бизнеса.</li>
                     </ol>
-                    <p class="hide">Переведите продажи в современный формат с использованием личного кабинета дилера на Битрикс.</p>
-    
-                    <button class="more"><b>Подробнее</b> <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 11L10 1M10 1H1M10 1V11" stroke="white" stroke-width="2" />
-                        </svg>
-                    </button>
-                </article>
-                <div class="arrow right"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24.2765 16.8781L9.47555 31.6381C8.99062 32.1214 8.20549 32.1206 7.72137 31.6356C7.23762 31.1507 7.23887 30.3651 7.72387 29.8815L21.6438 15.9999L7.72337 2.11849C7.23844 1.63474 7.23719 0.849685 7.72087 0.364687C7.96356 0.121563 8.28149 0 8.59943 0C8.91655 0 9.23324 0.12075 9.47549 0.362186L24.2765 15.1218C24.5101 15.3542 24.6411 15.6704 24.6411 15.9999C24.6411 16.3294 24.5097 16.6453 24.2765 16.8781Z" fill="#C4C4C4"/>
-                    </svg>
+                    <p class="intro__text intro__text--small">Переведите продажи в современный формат с использованием
+                        личного кабинета дилера на
+                        Битрикс.</p>
+                    <button class="intro__button"><b>Подробнее</b><img src="./image/button_arrow.png"
+                            alt="arrow"></button>
                 </div>
+                <button class="intro__arrow intro__arrow--right"></button>
             </div>
-            <div class="circle">
+            <div class="intro__circles">
                 <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
         </section>
-        <section class="secondContainer">
-            <h2>Наши услуги</h2>
-            <div class="cardContainer">
-                <div class="card">
-                    <div class="imgLink">
-                        <img class="img" src="./image/image1.png" alt="image1">
-                        <img class="link" src="./image/link.png" alt="link">
+        <section class="services">
+            <h2 class="services__title">Наши услуги</h2>
+            <div class="services__cards">
+                <div class="services__card">
+                    <div class="services__card-image-wrapped">
+                        <img class="services__card-image" src="./image/image1.png" alt="image1">
+                        <img class="services__card-link" src="./image/link.png" alt="link">
                     </div>
-                    <h4>Внедрение личных кабинетов</h4>
-                    <p>Разработка и внедрение B2B порталов для оптимизации взаимодействия с контрагентами и увеличения прибыли. При интеграции с системами 1С и CRM Битрикс 24 магазин требует меньше трудозатрат на сопровождение заказа.</p>
+                    <h3 class="services__card-heading">Внедрение личных кабинетов</h3>
+                    <p class="services__card-text">Разработка и внедрение B2B порталов для оптимизации взаимодействия с
+                        контрагентами и увеличения
+                        прибыли. При интеграции с системами 1С и CRM Битрикс 24 магазин требует меньше трудозатрат на
+                        сопровождение заказа.</p>
                 </div>
-                <div class="card">
-                    <div class="imgLink">
-                        <img class="img" src="./image/image2.png" alt="image2">
-                        <img class="link" src="./image/link.png" alt="link">
-                    </div>                    
-                    <h4>Разработка маркетплейсов</h4>
-                    <p>Разработка и внедрение личного кабинета поставщика на Битрикс для организации единой торговой онлайн-площадки. Получите готовую платформу с передовым функционалом в короткие сроки и за разумные деньги.</p>
-                </div>
-                <div class="card">
-                    <div class="imgLink">
-                        <img class="img" src="./image/image3.png" alt="image3">
-                        <img class="link" src="./image/link.png" alt="link">
-                    </div>                    
-                    <h4>Создание интернет-магазинов</h4>
-                    <p>Разработка, внедрение типовых и уникальных интернет-магазинов на Битрикс. Готовые решения сайтов созданы для продажи ваших товаров в розницу без привлечения дополнительных исполнителей.</p>
-                </div>
-                <div class="card">
-                    <div class="imgLink">
-                        <img class="img" src="./image/image4.png" alt="image4">
-                        <img  class="link" src="./image/link.png" alt="link">
-                    </div>                    
-                    <h4>Внедрение Битрикс24</h4>
-                    <p>Внедрение Битрикс24 и Корпоративных порталов для оптимизации бизнес-процессов компании.</p>
-                </div>
-                <div class="card">
-                    <div class="imgLink">
-                        <img class="img" src="./image/image5.png" alt="image5">
-                        <img class="link" src="./image/link.png" alt="link">
-                    </div>                    
-                    <h4>Техподдержка сайта</h4>
-                    <p>Доработка типовых решений для Битрикс, разработка функционала под задачи бизнеса, сопровождение проектов.</p>
-                </div>
-                <div class="card">
-                    <div class="imgLink">
-                        <img class="img" src="./image/image6.png" alt="image6">
-                        <img class="link" src="./image/link.png" alt="link">
-                    </div>                    
-                    <h4>Обслуживание 1С</h4>
-                    <p>Интеграция 1С со сторонними системами, доработка типовых модулей обмена, разработка АРI.</p>
-                </div>
-                <div class="card">
-                    <div class="imgLink">
-                        <img class="img" src="./image/image7.png" alt="image7">
-                        <img class="link" src="./image/link.png" alt="link">
+                <div class="services__card">
+                    <div class="services__card-image-wrapped">
+                        <img class="services__card-image" src="./image/image2.png" alt="image2">
+                        <img class="services__card-link" src="./image/link.png" alt="link">
                     </div>
-                    <h4>1C-интеграция</h4>
-                    <p>Интеграция eCommerce проекта с учетными системами и внешними сервисами.</p>
+                    <h3 class="services__card-heading">Разработка маркетплейсов</h3>
+                    <p class="services__card-text">Разработка и внедрение личного кабинета поставщика на Битрикс для
+                        организации единой торговой
+                        онлайн-площадки. Получите готовую платформу с передовым функционалом в короткие сроки и за
+                        разумные деньги.</p>
                 </div>
-                <div class="card">
-                    <div class="imgLink">
-                        <img class="img" src="./image/image8.png" alt="image8">
-                        <img class="link" src="./image/link.png" alt="link">
+                <div class="services__card">
+                    <div class="services__card-image-wrapped">
+                        <img class="services__card-image" src="./image/image3.png" alt="image3">
+                        <img class="services__card-link" src="./image/link.png" alt="link">
                     </div>
-                    <h4>Мобильная разработка</h4>
-                    <p>Создание iOS и Android приложений для интернет-магазинов и B2B-платформ на Битрикс.</p>
+                    <h3 class="services__card-heading">Создание интернет-магазинов</h3>
+                    <p class="services__card-text">Разработка, внедрение типовых и уникальных интернет-магазинов на
+                        Битрикс. Готовые решения сайтов
+                        созданы для продажи ваших товаров в розницу без привлечения дополнительных исполнителей.</p>
                 </div>
-                <div class="card">
-                    <div class="imgLink">
-                        <img class="img" src="./image/image9.png" alt="image9">
-                        <img class="link" src="./image/link.png" alt="link">
+                <div class="services__card">
+                    <div class="services__card-image-wrapped">
+                        <img class="services__card-image" src="./image/image4.png" alt="image4">
+                        <img class="services__card-link" src="./image/link.png" alt="link">
                     </div>
-                    <h4>Дизайн</h4>
-                    <p>Бренд-дизайн, брендбук, UI/UX, пользовательские интерфейсы, графика и прочее.</p>
+                    <h3 class="services__card-heading">Внедрение Битрикс24</h3>
+                    <p class="services__card-text">Внедрение Битрикс24 и Корпоративных порталов для оптимизации
+                        бизнес-процессов компании.</p>
+                </div>
+                <div class="services__card">
+                    <div class="services__card-image-wrapped">
+                        <img class="services__card-image" src="./image/image5.png" alt="image5">
+                        <img class="services__card-link" src="./image/link.png" alt="link">
+                    </div>
+                    <h3 class="services__card-heading">Техподдержка сайта</h3>
+                    <p class="services__card-text">Доработка типовых решений для Битрикс, разработка функционала под
+                        задачи бизнеса, сопровождение
+                        проектов.</p>
+                </div>
+                <div class="services__card">
+                    <div class="services__card-image-wrapped">
+                        <img class="services__card-image" src="./image/image6.png" alt="image6">
+                        <img class="services__card-link" src="./image/link.png" alt="link">
+                    </div>
+                    <h3 class="services__card-heading">Обслуживание 1С</h3>
+                    <p class="services__card-text">Интеграция 1С со сторонними системами, доработка типовых модулей
+                        обмена, разработка АРI.</p>
+                </div>
+                <div class="services__card">
+                    <div class="services__card-image-wrapped">
+                        <img class="services__card-image" src="./image/image7.png" alt="image7">
+                        <img class="services__card-link" src="./image/link.png" alt="link">
+                    </div>
+                    <h3 class="services__card-heading">1C-интеграция</h3>
+                    <p class="services__card-text">Интеграция eCommerce проекта с учетными системами и внешними
+                        сервисами.</p>
+                </div>
+                <div class="services__card">
+                    <div class="services__card-image-wrapped">
+                        <img class="services__card-image" src="./image/image8.png" alt="image8">
+                        <img class="services__card-link" src="./image/link.png" alt="link">
+                    </div>
+                    <h3 class="services__card-heading">Мобильная разработка</h3>
+                    <p class="services__card-text">Создание iOS и Android приложений для интернет-магазинов и
+                        B2B-платформ на Битрикс.</p>
+                </div>
+                <div class="services__card">
+                    <div class="services__card-image-wrapped">
+                        <img class="services__card-image" src="./image/image9.png" alt="image9">
+                        <img class="services__card-link" src="./image/link.png" alt="link">
+                    </div>
+                    <h3 class="services__card-heading">Дизайн</h3>
+                    <p class="services__card-text">Бренд-дизайн, брендбук, UI/UX, пользовательские интерфейсы, графика и
+                        прочее.</p>
                 </div>
             </div>
         </section>
