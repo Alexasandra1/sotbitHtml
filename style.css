@@ -92,48 +92,47 @@ h1 {
 }
 
 .intro {
-    background: url(./image/background1920.png);
-    height: 1080px;
-    display: grid;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .intro__container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.intro__slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.intro__slide {
+    flex: 0 0 100%;
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 15vh;
-    align-self: end;
+    justify-content: center;
 }
 
-.intro__content {
-    max-width: 839px;
-    font-size: 56px;
+.intro__image {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    display: block;
 }
 
-h1, h2{
-    margin: 0;
-}
-
-.intro__subtitle {
-    font-weight: 300;
-    font-size: 52px;
-}
-
-.intro__list {
-    font-size: 16px;
-}
-
-.intro__title-small,
-.intro__subtitle-small,
-.intro__text {
-    display: none;
-}
-
-.intro__button{
+.intro__arrows{
+    position: absolute;
+    top: 50%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 100%;
 }
-
 .intro__arrow{
     border: none;
     width: 30px;
@@ -150,12 +149,35 @@ h1, h2{
     transform: rotate(180deg);
 }
 
+.intro__arrow:hover{
+opacity: 0.7;
+}
+
 .intro__circles {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    height: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+    padding: 0;
     display: flex;
     justify-self: center;
     gap: 2vh;
-    align-self: self-end;
-    margin-bottom: 1vh;
+}
+
+.intro__circle:hover {
+    transform: scale(1.2);
+}
+.intro__circle{
+    border-radius: 100%;
+    border: none;
+}
+
+.intro__circle.active {
+    background-color: #00AEEF;
+    transform: scale(1.2);
 }
 
 .intro__circles div {
@@ -199,71 +221,21 @@ h1, h2{
 }
 
 @media (max-width: 1540px) {
-    .intro {
-        background: url(./image/background1440.png);
-        height: 1024px;
-    }
-
-    .intro__container {
-        gap: 0;
-    }
-
-    .intro__title-large,
-    .intro__subtitle-large,
-    .intro__list {
-        display: none;
-    }
-
-    .intro__title-small,
-    .intro__subtitle-small,
-    .intro__text {
-        display: block;
-    }
-
-    .intro__subtitle {
-        font-size: 52px;
-        font-weight: 1000;
-        color: #7c7d82;
-    }
-
-    .intro__title {
-        font-size: 64px;
-        font-weight: 1000;
-    }
-
-    .intro__text {
-        font-size: 18px;
-        max-width: 630px;
-
-    }
-
     .services {
         padding: 60px;
     }
 }
 
+@media (max-width: 1300px) {
+    .intro__circles {
+        top: 85%
+    }
+}
+
 @media (max-width: 1024px) {
-    .intro {
-        background: url(./image/background1024.png);
-        height: 768px;
-
-    }
-
-    .intro__subtitle {
-        font-size: 40px;
-    }
-
-    .intro__title {
-        font-size: 48px;
-    }
-
-    .intro__text{
-        font-size: 18px;
-        max-width: 450px;
-    }
-
     .header__button-letter,
-    .intro__arrow {
+    .intro__arrows 
+    {
         display: none
     }
 
@@ -279,29 +251,6 @@ h1, h2{
 
     .header__phone {
         display: none;
-    }
-
-    .intro {
-        background: url(./image/background768.png);
-        height: 1024px;
-    }
-
-    .intro__container {
-        align-self: start;
-        padding: 15vh 1vh;
-    }
-
-    .intro__subtitle {
-        font-size: 32px;
-    }
-
-    .intro__title {
-        font-size: 40px;
-    }
-
-    .intro__text {
-        font-size: 18px;
-        max-width: 720px;
     }
 
     .services {
@@ -339,21 +288,9 @@ h1, h2{
         display: none;
     }
 
-    .intro {
-        background: url(./image/background320.png);
-        height: 629px;
-    }
-    
-    .intro__container {
-        padding: 3vh 1vh;
-    }
-
-    .intro__subtitle {
-        font-size: 24px;
-    }
-
-    .intro__title {
-        font-size: 32px;
+    .intro__circles {
+        top: 80%;
+        left: 40%;
     }
 
     .services {
