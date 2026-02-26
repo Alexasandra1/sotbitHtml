@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Classes</title>
+</head>
+<body>
+  <h1>Open DevTools (F12)</h1>
+
+  <script type="module">
+    import { Student } from './Student.js';
+    import { Instructor } from './Instructor.js';
+    import { Course } from './Course.js';
+
+    const student = new Student('Alice', 20, 'alice@test.com', '1');
+    const student2 = new Student('Aline', 21, 'alice@test.com', '2');
+    const instructor = new Instructor('Dr. Brown', 50, 'brown@uni.edu', 'Instructor1');
+    const course = new Course('course1', 'JavaScript Basics', instructor);
+    const course2 = new Course('course1', 'PHP', instructor);
+
+    course.addStudent(student);
+    course.addStudent(student2);
+    course2.addStudent(student2);
+    instructor.assignCourse(course);
+    instructor.assignCourse(course2);
+
+    student.getDetails();  
+    student2.getDetails();  
+    instructor.getDetails(); 
+    course.getDetails();  
+  </script>
+</body>
+</html>
